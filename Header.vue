@@ -1,12 +1,14 @@
 <template>
   <div>
     <section class="vue_wrap">
+      <H1>WOMEN </H1>
       <div class="wrap">
         <h1>我们能</h1>
       <i class="header_left" :class="left_msg" @click="back()"></i>
       <div class="header_middle" @click="resetAddress()">{{middle_msg}}</div>
       <span v-if="right_msg" class="header_right">
         <span v-if="this.$store.state.res==''" @click="tologin()">登陆</span>
+        <span v-if="this.$store.state.res==''" @click="tologin()">|注册</span>
         <span class="iconfont login" v-else @click="tomy()">&#xe65e;</span>
       </span>
     </div>
