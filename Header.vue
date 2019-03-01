@@ -1,6 +1,7 @@
 <template>
   <div>
     <section class="vue_wrap">
+      <H1>WOMEN </H1>
       <div class="wrap">
       <i class="header_left" :class="left_msg" @click="back()"></i>
       <div class="header_middle" @click="resetAddress()">{{middle_msg}}</div>
