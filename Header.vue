@@ -6,7 +6,7 @@
       <i class="header_left" :class="left_msg" @click="back()"></i>
       <div class="header_middle" @click="resetAddress()">{{middle_msg}}</div>
       <span v-if="right_msg" class="header_right">
-        <span v-if="this.$store.state.res==''" @click="tologin()">登陆|注册</span>
+        <span v-if="this.$store.state.res==''" @click="tologin()">登陆</span>
         <span class="iconfont login" v-else @click="tomy()">&#xe65e;</span>
       </span>
     </div>
